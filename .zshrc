@@ -3,7 +3,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/pimmy/.oh-my-zsh"
-export TELEGRAM_TOKEN=1311503097:AAFUn53HclyChXF-UPS8YGsnSTDtoi4omnA
 export PATH="$HOME/.local/bin:$PATH"
 export WINIT_X11_SCALE_FACTOR=1
 PROMPT_EOL_MARK=' '
