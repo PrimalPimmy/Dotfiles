@@ -1,77 +1,87 @@
 return {
-  "ibhagwan/fzf-lua",
-  -- optional for icon support
-  -- dependencies = { "nvim-tree/nvim-web-devicons" },
-  -- or if using mini.icons/mini.nvim
-  dependencies = { "echasnovski/mini.icons" },
-  opts = {},
-  keys = {
-    {
-      "<leader>ff",
-      function() require("fzf-lua").files() end,
-      desc = "FZF Files in project directory",
-    },
-    {
-      "<leader>fg",
-      function() require("fzf-lua").live_grep() end,
-      desc = "FZF Live Grep",
-    },
-    {
-      "<leader>fb",
-      function() require("fzf-lua").builtin() end,
-      desc = "FZF Built-in",
-    },
-    {
-      "<leader>fh",
-      function() require("fzf-lua").help_tags() end,
-      desc = "FZF Help Tags",
-    },
-    {
-      "<leader>fc",
-      function() require('fzf-lua').files({cwd=vim.fn.stdpath("config")}) end,
-      desc="Find in neovim configuration"
-    },
-    {
-      "<leader>fk",
-      function()
-        require("fzf-lua").keymaps()
-      end,
-      desc = "[F]ind [K]eymaps",
-    },
-    {
-      "<leader>fw",
-      function()
-        require("fzf-lua").grep_cword()
-      end,
-      desc = "[F]ind current [W]ord",
-    },
-    {
-      "<leader>fd",
-      function()
-        require("fzf-lua").diagnostics_document()
-      end,
-      desc = "[F]ind [D]iagnostics",
-    },
-    {
-      "<leader>fo",
-      function()
-        require("fzf-lua").oldfiles()
-      end,
-      desc = "[F]ind [O]ld Files",
-    },
-    {
-      "<leader><leader>",
-      function()
-        require("fzf-lua").buffers()
-      end,
-      desc = "[SPACE] Find existing buffers",
-    },
-    {
-      "<leader>/",
-      function()
-        require("fzf-lua").lgrep_curbuf()
-      end,
-      desc = "[/] Live grep the current buffer",
-    },
-  },
+	"ibhagwan/fzf-lua",
+	-- optional for icon support
+	-- dependencies = { "nvim-tree/nvim-web-devicons" },
+	-- or if using mini.icons/mini.nvim
+	dependencies = { "echasnovski/mini.icons" },
+	opts = {},
+	keys = {
+		{
+			"<leader>ff",
+			function()
+				require("fzf-lua").files()
+			end,
+			desc = "FZF Files in project directory",
+		},
+		{
+			"<leader>fg",
+			function()
+				require("fzf-lua").live_grep()
+			end,
+			desc = "FZF Live Grep",
+		},
+		{
+			"<leader>fb",
+			function()
+				require("fzf-lua").builtin()
+			end,
+			desc = "FZF Built-in",
+		},
+		{
+			"<leader>fh",
+			function()
+				require("fzf-lua").help_tags()
+			end,
+			desc = "FZF Help Tags",
+		},
+		{
+			"<leader>fc",
+			function()
+				require("fzf-lua").files({ cwd = vim.fn.stdpath("config") })
+			end,
+			desc = "Find in neovim configuration",
+		},
+		{
+			"<leader>fk",
+			function()
+				require("fzf-lua").keymaps()
+			end,
+			desc = "[F]ind [K]eymaps",
+		},
+		{
+			"<leader>fw",
+			function()
+				require("fzf-lua").grep_cword()
+			end,
+			desc = "[F]ind current [W]ord",
+		},
+		{
+			"<leader>fd",
+			function()
+				require("fzf-lua").diagnostics_document()
+			end,
+			desc = "[F]ind [D]iagnostics",
+		},
+		{
+			"<leader>fo",
+			function()
+				require("fzf-lua").oldfiles()
+			end,
+			desc = "[F]ind [O]ld Files",
+		},
+		{
+			"<leader><leader>",
+			function()
+				require("fzf-lua").buffers()
+			end,
+			desc = "[SPACE] Find existing buffers",
+		},
+		{
+			"<leader>/",
+			function()
+				require("fzf-lua").lgrep_curbuf()
+			end,
+			desc = "[/] Live grep the current buffer",
+		},
+	},
 }
