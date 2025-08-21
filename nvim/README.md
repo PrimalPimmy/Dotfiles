@@ -84,19 +84,6 @@ This is my personal Neovim configuration using [lazy.nvim](https://github.com/fo
 ### General
 - `<leader>?` - Show buffer local keymaps
 
-## Features
-
-- **Auto-completion** with blink.cmp (Rust-based, fast)
-- **LSP support** for multiple languages
-- **Syntax highlighting** with Treesitter
-- **Fuzzy finding** with fzf-lua
-- **File explorer** with oil.nvim
-- **Project management** with project.nvim
-- **Auto-formatting** with conform.nvim
-- **Smart indentation** detection
-- **Modern UI** with Tokyo Night theme
-- **Keymap discovery** with which-key
-
 ## Installation
 
 1. Clone this repository to your Neovim config directory
